@@ -29,10 +29,9 @@ const findByIdMiddleware = async (req, res, next) => {
 }
 
 singleRouter.delete('/', async (req, res) => {
-  await req.todo.delete()
+  await req.todo.deleteOne()
   res.sendStatus(200);
 });
-
 singleRouter.get('/', async (req, res) => {
   res.send(req.todo);
 });
