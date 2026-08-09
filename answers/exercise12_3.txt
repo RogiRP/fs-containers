@@ -1,0 +1,8 @@
+﻿docker container ls -a
+docker start -i 134bd048cf00
+root@134bd048cf00:/# apt-get update
+root@134bd048cf00:/# apt-get -y install nano
+root@134bd048cf00:/# nano /usr/src/app/index.js
+root@134bd048cf00:/# cat /usr/src/app/index.js
+console.log('Hello World')
+root@134bd048cf00:/# exit
