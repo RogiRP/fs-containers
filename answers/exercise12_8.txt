@@ -1,0 +1,19 @@
+﻿docker exec -it todo-backend-mongo-1 mongosh -u root -p example
+test> db.todos.deleteOne({ text: "Increase the number of tools in my tool belt" })
+{ acknowledged: true, deletedCount: 1 }
+test> use the_database
+switched to db the_database
+the_database> db.todos.find({})
+[
+  { _id: ObjectId('6a785c75d9486f522a075291'), text: 'Write code updated', done: false },
+  { _id: ObjectId('6a785c75d9486f522a075292'), text: 'Learn about containers', done: false }
+]
+the_database> db.todos.insertOne({ text: "Increase the number of tools in my tool belt", done: false })
+{ acknowledged: true, insertedId: ObjectId('6a785f882718b17a8a3e88a7') }
+the_database> db.todos.find({})
+[
+  { _id: ObjectId('6a785c75d9486f522a075291'), text: 'Write code updated', done: false },
+  { _id: ObjectId('6a785c75d9486f522a075292'), text: 'Learn about containers', done: false },
+  { _id: ObjectId('6a785f882718b17a8a3e88a7'), text: 'Increase the number of tools in my tool belt', done: false }
+]
+the_database> exit
