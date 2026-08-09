@@ -6,6 +6,8 @@ COPY . .
 
 RUN npm ci
 
+RUN npm run test
+
 ARG VITE_BACKEND_URL
 ENV VITE_BACKEND_URL=$VITE_BACKEND_URL
 
