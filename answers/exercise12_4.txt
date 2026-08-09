@@ -1,10 +1,10 @@
-﻿docker start -i 134bd048cf00
+docker start -i 134bd048cf00
 root@134bd048cf00:/# apt-get update
 root@134bd048cf00:/# apt-get -y install curl
 root@134bd048cf00:/# curl -sL https://deb.nodesource.com/setup_20.x | bash
 root@134bd048cf00:/# apt install -y nodejs
 root@134bd048cf00:/# node -v
-v20.x.x
+v20.20.2
 root@134bd048cf00:/# node /usr/src/app/index.js
 Hello World
 root@134bd048cf00:/# exit
