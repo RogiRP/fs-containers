@@ -1,0 +1,12 @@
+﻿docker container run -it ubuntu bash
+Unable to find image 'ubuntu:latest' locally
+latest: Pulling from library/ubuntu
+Status: Downloaded newer image for ubuntu:latest
+root@134bd048cf00:/# mkdir -p /usr/src/app
+root@134bd048cf00:/# touch /usr/src/app/index.js
+root@134bd048cf00:/# ls -la /usr/src/app
+total 8
+drwxr-xr-x 2 root root 4096 Aug  9 08:11 .
+drwxr-xr-x 1 root root 4096 Aug  9 08:11 ..
+-rw-r--r-- 1 root root    0 Aug  9 08:11 index.js
+root@134bd048cf00:/# exit
