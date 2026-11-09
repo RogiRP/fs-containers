@@ -1,12 +1,14 @@
 services:
   app:
+    image: todo-front
     build:
       context: ./todo-frontend
       dockerfile: Dockerfile
       args:
         VITE_BACKEND_URL: http://localhost:8080/api
     container_name: todo-frontend
-  server:
+  backend:
+    image: todo-backend
     build:
       context: ./todo-backend
       dockerfile: Dockerfile
@@ -39,4 +41,4 @@ services:
     container_name: reverse-proxy
     depends_on:
       - app
-      - server
+      - backend
