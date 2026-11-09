@@ -1,7 +1,8 @@
 # FS Containers
 
-Repositorio correspondiente a los ejercicios de Full Stack Open.
+Repositorio de ejercicios de la parte de contenedores de Full Stack Open.
 
-- [Repositorio FS-Containers](https://github.com/RogiRP/fs-containers)
+## Mi aplicación full stack
 
-- [my-app](https://github.com/RogiRP/fs-containers/tree/main/my-app)
+- Repositorio de la aplicación: https://github.com/RogiRP/samurai-directory
+- Configuración en contenedores dentro de este repositorio: [my-app](./my-app)
